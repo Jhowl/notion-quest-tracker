@@ -1,7 +1,7 @@
 
 import React from "react";
 import { GamificationState } from "@/types/idea";
-import { Star, Award, Badge, Streak } from "lucide-react";
+import { Star, Award, Badge } from "lucide-react";
 
 interface GamificationPanelProps {
   gamification: GamificationState;
@@ -76,7 +76,7 @@ const GamificationPanel: React.FC<GamificationPanelProps> = ({ gamification }) =
 
       <div className="flex items-center gap-2">
         <div className="h-10 w-10 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center shadow-md">
-          <Streak className="h-5 w-5 text-white" />
+          <Badge className="h-5 w-5 text-white" />
         </div>
         <div>
           <p className="text-sm text-muted-foreground">Current Streak</p>
